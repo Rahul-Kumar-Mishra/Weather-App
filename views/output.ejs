@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+
+    <style>
+        /* body {
+          background-image: url('<%= img %>');
+        } */
+        </style>
+</head>
+<body>
+    
+    <div class="weather-container">
+        <div class="temperature">
+            <h3><%= cityName %></h3>
+            <h1><%= currentTemp %></h1>
+        </div>
+        <div class="weather-info">
+            <h3 style="color: burlywood;">Min: <%= min %> &#160; &#160; Max: <%= max %> </h3>
+            <p>The weather is currently <%= description %></p>
+            <p></p>
+        </div>
+        <div class="weather-image">
+            <img src= "<%= img %>" alt="Sun">
+        </div>
+    </div>
+
+</body>
+</html>
